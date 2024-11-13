@@ -91,7 +91,7 @@ const AddSongDialog = () => {
 	return (
 		<Dialog open={songDialogOpen} onOpenChange={setSongDialogOpen}>
 			<DialogTrigger asChild>
-				<Button className='bg-emerald-500 hover:bg-emerald-600 text-black'>
+				<Button className='bg-blue-600 hover:bg-blue-950  text-zinc-100'>
 					<Plus className='mr-2 h-4 w-4' />
 					Add Song
 				</Button>
@@ -99,7 +99,7 @@ const AddSongDialog = () => {
 
 			<DialogContent className='bg-zinc-900 border-zinc-700 max-h-[80vh] overflow-auto'>
 				<DialogHeader>
-					<DialogTitle>Add New Song</DialogTitle>
+					<DialogTitle >Add New Song</DialogTitle>
 					<DialogDescription>Add a new song to your music library</DialogDescription>
 				</DialogHeader>
 
@@ -128,7 +128,7 @@ const AddSongDialog = () => {
 						<div className='text-center'>
 							{files.image ? (
 								<div className='space-y-2'>
-									<div className='text-sm text-emerald-500'>Image selected:</div>
+									<div className='text-sm text-blue-600'>Image selected:</div>
 									<div className='text-xs text-zinc-400'>{files.image.name.slice(0, 20)}</div>
 								</div>
 							) : (

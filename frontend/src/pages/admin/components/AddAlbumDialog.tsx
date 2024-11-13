@@ -94,7 +94,7 @@ const AddAlbumDialog = () => {
 						className='flex items-center justify-center p-6 border-2 border-dashed border-zinc-700 rounded-lg cursor-pointer'
 						onClick={() => fileInputRef.current?.click()}
 					>
-						<div className='text-center'>
+						<div className='text-center '>
 							<div className='p-3 bg-zinc-800 rounded-full inline-block mb-2'>
 								<Upload className='h-6 w-6 text-zinc-400' />
 							</div>
@@ -107,7 +107,7 @@ const AddAlbumDialog = () => {
 						</div>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Album Title</label>
+						<label className='text-sm font-medium text-zinc-400'>Album Title</label>
 						<Input
 							value={newAlbum.title}
 							onChange={(e) => setNewAlbum({ ...newAlbum, title: e.target.value })}

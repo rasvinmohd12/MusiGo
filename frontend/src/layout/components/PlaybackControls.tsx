@@ -149,7 +149,7 @@ export const PlaybackControls = () => {
 							<Volume1 className='h-4 w-4' />
 						</Button>
 
-						<Slider
+						<Slider 
 							value={[volume]}
 							max={100}
 							step={1}

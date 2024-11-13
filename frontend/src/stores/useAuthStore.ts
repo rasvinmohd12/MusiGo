@@ -30,4 +30,4 @@ export const useAuthStore = create<AuthStore>((set) => ({
 	reset: () => {
 		set({ isAdmin: false, isLoading: false, error: null });
 	},
-}));
+}));   
